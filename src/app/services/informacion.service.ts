@@ -6,15 +6,20 @@ import { Http } from '@angular/http';
 })
 export class InformacionService {
 
-  info:any = {};
-  cargada: boolean = false
+  Portafolio:any = {};
+  cargada: boolean = false;
 
   constructor( public http: Http ) {
-    this.http.get("assets/data/info.pagina.json")
-                .subscribe(data => {
-                  console.log(data.json());
-                  this.info = data.json();
-                  this.cargada = true
-                })
+    this.cargar_firebase();
   }
+
+public cargar_firebase(){
+  this.http.get("https://portafolio-247d7-default-rtdb.firebaseio.com/Portafolio.json")
+              .subscribe(data => {
+                console.log(data.json());
+                this.Portafolio = data.json();
+                this.cargada = true
+              })
+}
+
 }
