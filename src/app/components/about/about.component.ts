@@ -7,7 +7,16 @@ import { InformacionService } from "../../services/informacion.service";
   styles: []
 })
 export class AboutComponent {
+  estudios = []
+  cursos = []
 
-  constructor( _is: InformacionService) { }
+  constructor( private infoService: InformacionService) {
+    this.infoService.cargar_estudios().subscribe(data => {
+        this.estudios = data.json()
+      })
+    this.infoService.cargar_cursos().subscribe(data => {
+        this.cursos = data.json()
+      })
+  }
 
 }

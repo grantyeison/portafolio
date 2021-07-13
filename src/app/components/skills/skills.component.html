@@ -1,0 +1,30 @@
+
+<div class="ae-container-fluid ae-container-fluid--inner  animated fadeIn">
+  <div *ngFor="let skill of skills">
+
+  <div  *ngIf="skill.ubicacion !== 0" >
+    <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+      <div class="item-lg-5">
+        <h4 class="ae-u-bolder">{{ skill.name }}</h4>
+        <p class="au-lg-ta-justify">{{ skill.descripcion }}</p>
+      </div>
+      <div class="ae-grid__item item-lg-6 item-lg--offset-1">
+        <img [src]="skill.imagen" style="width:400px; height:auto" [alt]="skill.name">
+      </div>
+    </div>
+  </div>
+
+    <div  *ngIf="skill.ubicacion !== 1" >
+      <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+        <div class="ae-grid__item item-lg-6">
+          <img [src]="skill.imagen" style=" width:400px; height:auto" [alt]="skill.name">
+        </div>
+        <div class="item-lg-5 item-lg--offset-1">
+          <h4 class="ae-u-bolder">{{ skill.name }}</h4>
+          <p class="au-lg-ta-justify">{{ skill.descripcion }}</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
