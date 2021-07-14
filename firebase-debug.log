@@ -1,0 +1,65 @@
+[debug] [2021-07-14T20:00:10.645Z] ----------------------------------------------------------------------
+[debug] [2021-07-14T20:00:10.646Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2021-07-14T20:00:10.647Z] CLI Version:   9.16.0
+[debug] [2021-07-14T20:00:10.647Z] Platform:      darwin
+[debug] [2021-07-14T20:00:10.647Z] Node Version:  v14.17.0
+[debug] [2021-07-14T20:00:10.648Z] Time:          Wed Jul 14 2021 15:00:10 GMT-0500 (Colombia Standard Time)
+[debug] [2021-07-14T20:00:10.648Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-14T20:00:10.652Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-14T20:00:10.652Z] > authorizing via signed-in user (grantyeison@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/administrador/Desktop/portafolio
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using portafolio-247d7. 
+[debug] [2021-07-14T20:00:15.261Z] > refreshing access token with scopes: []
+[debug] [2021-07-14T20:00:15.261Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-14T20:00:15.496Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Wed, 14 Jul 2021 20:00:15 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-14T20:00:15.552Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/portafolio-247d7 [none]
+[debug] [2021-07-14T20:00:15.889Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/portafolio-247d7 200
+[debug] [2021-07-14T20:00:15.889Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/portafolio-247d7 {"projectId":"portafolio-247d7","projectNumber":"77689601332","displayName":"portafolio","name":"projects/portafolio-247d7","resources":{"hostingSite":"portafolio-247d7","realtimeDatabaseInstance":"portafolio-247d7-default-rtdb","storageBucket":"portafolio-247d7.appspot.com","locationId":"us-east1"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote public/404.html 
+[debug] [2021-07-14T20:00:36.492Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-07-14T20:00:36.575Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-07-14T20:00:36.575Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.7.1","browserURL":"https://www.gstatic.com/firebasejs/8.7.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.7.1/firebase.tgz"},"live":{"version":"8.7","browserURL":"https://www.gstatic.com/firebasejs/live/8.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.7/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/8.7.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.7.1/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.7.1/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.7.1/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.7.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.7.1/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/administrador/Desktop/portafolio 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=213055182&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-07-14T20:01:02.144Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"cf034db6c3925a3435c1","redirect_uri":"http://localhost:9005","state":"213055182"}
+[debug] [2021-07-14T20:01:02.565Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 14 Jul 2021 20:01:02 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"fdb1800e618dc0b8ef2c879f3430c17f\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com render-temp.githubusercontent.com viewscreen.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-3f088aa2.js gist.github.com/socket-worker-3f088aa2.js","x-github-request-id":"FA2B:6489:7E8772:CE4BE1:60EF427E"}
+[debug] [2021-07-14T20:01:02.576Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-07-14T20:01:02.954Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-07-14T20:01:02.954Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"grantyeison","id":25779211,"node_id":"MDQ6VXNlcjI1Nzc5MjEx","avatar_url":"https://avatars.githubusercontent.com/u/25779211?v=4","gravatar_id":"","url":"https://api.github.com/users/grantyeison","html_url":"https://github.com/grantyeison","followers_url":"https://api.github.com/users/grantyeison/followers","following_url":"https://api.github.com/users/grantyeison/following{/other_user}","gists_url":"https://api.github.com/users/grantyeison/gists{/gist_id}","starred_url":"https://api.github.com/users/grantyeison/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/grantyeison/subscriptions","organizations_url":"https://api.github.com/users/grantyeison/orgs","repos_url":"https://api.github.com/users/grantyeison/repos","events_url":"https://api.github.com/users/grantyeison/events{/privacy}","received_events_url":"https://api.github.com/users/grantyeison/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":9,"public_gists":0,"followers":0,"following":0,"created_at":"2017-02-14T20:58:34Z","updated_at":"2021-07-14T20:01:01Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":28367,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as grantyeison 
+[info] 

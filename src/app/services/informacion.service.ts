@@ -39,4 +39,20 @@ export class InformacionService {
       return this.http.get("https://portafolio-247d7-default-rtdb.firebaseio.com/Portafolio/Capacitaciones.json")
 
   }
+
+  public cargar_experiencia(): Observable<any> {
+      return this.http.get("https://portafolio-247d7-default-rtdb.firebaseio.com/Portafolio/Experiencia_laboral.json")
+
+  }
+
+  public cargar_portafolio(): Observable<any> {
+      return this.http.get("https://portafolio-247d7-default-rtdb.firebaseio.com/Portafolio/Portafolio.json")
+
+  }
+
+  public cargar_intereses(): Observable<any> {
+            return this.http.get("https://portafolio-247d7-default-rtdb.firebaseio.com/Portafolio/Intereses.json")
+
+    }
+
 }

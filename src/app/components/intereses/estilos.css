@@ -1,0 +1,11 @@
+nav {
+  position: fixed;
+  width: 100%
+  min-height: 120px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  top: auto;
+  transition: top 0.5s
+}

@@ -1,0 +1,104 @@
+
+<div class="ae-grid au-xs-ta-center au-mb-4  animated fadeIn">
+
+  <div class="rk-navigation" class="vertical-menu">
+      <a href="#Artistas">Arte</a>
+      <a href="#Colecciones" >Colecciones</a>
+      <a href="#Deportes" class="rk-menu__link">Deportes</a>
+      <a href="#Libros" class="rk-menu__link">Libros</a>
+      <a href="#Musica" class="rk-menu__link">Música</a>
+      <a href="#Peliculas" class="rk-menu__link">Películas</a>
+      <a href="#Series" class="rk-menu__link">Series de TV</a>
+  </div>
+
+    <div id="Artistas" class="ae-grid au-xs-ta-center au-mb-4" style="margin-left:170px">
+      <div class="ae-grid__item item-lg-8 item-lg--offset-2">
+        <h4 class="ae-u-bolder">Arte</h4>
+      </div>
+      <div *ngFor="let item of intereses.Artistas"
+            class="ae-grid__item item-lg-4 ae-kappa au-mb-3">
+        <img [src]="item.imagen" style="height:200px; width:auto" alt="" class="au-mb-3">
+        <h5 class="ae-u-bolder au-mt-2">{{ item.nombre }}</h5>
+        <p class="au-lg-ta-justify au-lh-4" style="padding-left: 20px">{{ item.descripcion }}</p>
+      </div>
+    </div>
+
+<div id="Colecciones" class="ae-grid au-xs-ta-center au-mb-4" style="margin-left:170px">
+      <div class="ae-grid__item item-lg-8 item-lg--offset-2" style="margin-left:170px">
+        <h4 class="ae-u-bolder">Colecciones</h4>
+      </div>
+      <div *ngFor="let item of intereses.Colecciones"
+            class="ae-grid__item item-lg-4 ae-kappa au-mb-3" style="margin-left:170px">
+        <img [src]="item.imagen" style="height:200px; width:auto" alt="" class="au-mb-3">
+        <h5 class="ae-u-bolder au-mt-2">{{ item.nombre }}</h5>
+        <p class="au-lg-ta-justify au-lh-4" style="padding-left: 20px">{{ item.descripcion }}</p>
+      </div>
+      </div>
+
+<div id="Deportes" class="ae-grid au-xs-ta-center au-mb-4" style="margin-left:170px">
+  <div class="ae-grid__item item-lg-8 item-lg--offset-2" style="margin-left:170px">
+    <h4 class="ae-u-bolder">Deportes</h4>
+  </div>
+  <div *ngFor="let item of intereses.Deportes"
+        class="ae-grid__item item-lg-4 ae-kappa au-mb-3" style="margin-left:170px">
+    <img [src]="item.imagen" style="height:200px; width:auto" alt="" class="au-mb-3">
+    <h5 class="ae-u-bolder au-mt-2">{{ item.nombre }}</h5>
+    <p class="ae-u-bolder au-mb-3">{{ item.practica }}</p>
+    <p class="au-lg-ta-justify au-lh-4" style="padding-left: 20px">{{ item.descripcion }}</p>
+  </div>
+  </div>
+
+<div id="Libros" class="ae-grid au-xs-ta-center au-mb-4" style="margin-left:170px">
+  <div class="ae-grid__item item-lg-8 item-lg--offset-2" style="margin-left:170px">
+    <h4 class="ae-u-bolder">Libros</h4>
+  </div>
+  <div *ngFor="let item of intereses.Libros"
+        class="ae-grid__item item-lg-4 ae-kappa au-mb-3" style="margin-left:170px">
+    <img [src]="item.imagen" style="height:200px; width:auto" alt="" class="au-mb-3">
+    <h5 class="ae-u-bolder au-mt-2">{{ item.nombre }}</h5>
+    <p class="ae-u-bolder au-mb-3">{{ item.autor }}</p>
+    <p class="au-lg-ta-justify au-lh-4" style="padding-left: 20px">{{ item.sinopsis }}</p>
+    <p><b>{{ item.calificacion }}</b></p>
+  </div>
+  </div>
+
+  <div id="Peliculas" class="ae-grid au-xs-ta-center au-mb-4" style="margin-left:170px">
+  <div class="ae-grid__item item-lg-8 item-lg--offset-2" style="margin-left:170px">
+    <h4 class="ae-u-bolder">Películas</h4>
+  </div>
+  <div *ngFor="let item of intereses.Peliculas"
+        class="ae-grid__item item-lg-4 ae-kappa au-mb-3" style="margin-left:170px">
+        <img [src]="item.imagen" style="height:200px; width:auto" alt="" class="au-mb-3">
+        <h5 class="ae-u-bolder au-mt-2">{{ item.nombre }}</h5>
+        <p class="au-lg-ta-justify au-lh-4" style="padding-left: 20px">{{ item.sinopsis }}</p>
+        <p><b>{{ item.calificacion }}</b></p>
+  </div>
+  </div>
+
+  <div id="Musica" class="ae-grid au-xs-ta-center au-mb-4" style="margin-left:170px">
+  <div class="ae-grid__item item-lg-8 item-lg--offset-2" style="margin-left:170px">
+    <h4 class="ae-u-bolder">Música</h4>
+  </div>
+  <div *ngFor="let item of intereses.Musica"
+        class="ae-grid__item item-lg-4 ae-kappa au-mb-3" style="margin-left:170px">
+        <img [src]="item.imagen" style="height:200px; width:auto" alt="" class="au-mb-3">
+        <h5 class="ae-u-bolder au-mt-2">{{ item.nombre }}</h5>
+        <p class="ae-u-bolder au-mb-3">{{ item.agrupacion }}</p>
+        <a [href]="item.link" target="_blank" class="ae-u-bolder au-underline">Escuchar</a>
+        <p><b>{{ item.calificacion }}</b></p>
+  </div>
+  </div>
+
+  <div id="Series" class="ae-grid au-xs-ta-center au-mb-4" style="margin-left:170px">
+  <div class="ae-grid__item item-lg-8 item-lg--offset-2" style="margin-left:170px">
+    <h4 class="ae-u-bolder">Series de TV</h4>
+  </div>
+  <div *ngFor="let item of intereses.Series"
+        class="ae-grid__item item-lg-4 ae-kappa au-mb-3" style="margin-left:170px">
+        <img [src]="item.imagen" style="height:200px; width:auto" alt="" class="au-mb-3">
+        <h5 class="ae-u-bolder au-mt-2">{{ item.nombre }}</h5>
+        <p class="au-lg-ta-justify au-lh-4" style="padding-left: 20px">{{ item.sinopsis }}</p>
+        <p><b>{{ item.calificacion }}</b></p>
+  </div>
+</div>
+</div>

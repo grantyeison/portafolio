@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 
-
 //rutes
 import { app_routing } from './app.routes';
 
@@ -17,6 +16,10 @@ import { PortafolioComponent } from './components/portafolio/portafolio.componen
 import { AboutComponent } from './components/about/about.component';
 import { ItemComponent } from './components/item/item.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienciaComponent } from './components/experiencia/experiencia.component';
+import { TrabajosComponent } from './components/trabajos/trabajos.component';
+import { InteresesComponent } from './components/intereses/intereses.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { SkillsComponent } from './components/skills/skills.component';
     PortafolioComponent,
     AboutComponent,
     ItemComponent,
-    SkillsComponent
+    SkillsComponent,
+    ExperienciaComponent,
+    TrabajosComponent,
+    InteresesComponent
   ],
   imports: [
     BrowserModule,

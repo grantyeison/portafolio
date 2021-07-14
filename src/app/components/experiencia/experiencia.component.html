@@ -1,0 +1,25 @@
+
+<div class="ae-container-fluid ae-container-fluid--inner  animated fadeIn">
+
+  <div *ngFor="let item of experiencias">
+
+    <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
+      <div class="ae-grid__item item-lg-6">
+        <img [src]="item.logo" style=" width:400px; height:auto" [alt]="item.empresa">
+      </div>
+      <div class="item-lg-5 item-lg--offset-1">
+        <h4 class="ae-u-bolder">{{ item.empresa }}</h4>
+        <p>{{ item.cargo }}</p>
+        <dl>
+          <dt><b>Inicio</b></dt>
+            <dd>-{{ item.fecha_inicio }}</dd>
+          <dt><b>Fin</b></dt>
+            <dd>-{{ item.fecha_fin }}</dd>
+          <dt><b>Jefe directo</b></dt>
+            <dd>-{{ item.jefe }}</dd>
+        </dl>
+      </div>
+    </div>
+
+  </div>
+</div>
