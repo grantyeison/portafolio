@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -15,9 +16,9 @@ export class InformacionService {
 
   public cargar_firebase(){
     this.http.get("https://portafolio-247d7-default-rtdb.firebaseio.com/Portafolio/Personal.json")
-                .subscribe(data => {
-                  this.info = data.json();
-                })
+        .subscribe(data => {
+          this.info = data.json();
+        })
   }
 
   public cargar_skills(): Observable<any> {
@@ -51,8 +52,7 @@ export class InformacionService {
   }
 
   public cargar_intereses(): Observable<any> {
-            return this.http.get("https://portafolio-247d7-default-rtdb.firebaseio.com/Portafolio/Intereses.json")
+      return this.http.get("https://portafolio-247d7-default-rtdb.firebaseio.com/Portafolio/Intereses.json")
 
-    }
-
+  }
 }
