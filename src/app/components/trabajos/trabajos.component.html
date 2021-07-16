@@ -9,16 +9,16 @@
         <p class="au-lg-ta-justify">{{ item.descripcion }}</p>
         <p class="au-lg-ta-justify">Versión: {{ item.version }}</p>
       </div>
-      <div class="ae-grid__item item-lg-6 item-lg--offset-1">
-        <img [src]="item.icono" style="width:400px; height:auto" [alt]="item.nombre">
+      <div align="center" class="ae-grid__item item-lg-6 item-lg--offset-1">
+        <img [src]="item.icono" style="height:300px; width:auto" [alt]="item.nombre">
       </div>
     </div>
   </div>
 
     <div  *ngIf="item.ubicacion !== 1" >
       <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
-        <div class="ae-grid__item item-lg-6">
-          <img [src]="item.icono" style=" width:400px; height:auto" [alt]="item.name">
+        <div align="center" class="ae-grid__item item-lg-6">
+          <img [src]="item.icono" style= " height:400px; width:auto" [alt]="item.name">
         </div>
         <div class="item-lg-5 item-lg--offset-1">
           <h4 class="ae-u-bolder">{{ item.nombre }}</h4>

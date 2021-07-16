@@ -3,11 +3,11 @@
 
   <div *ngFor="let item of experiencias">
 
-    <div class="ae-grid ae-grid--collapse au-xs-ptp-1">
-      <div class="ae-grid__item item-lg-6">
-        <img [src]="item.logo" style=" width:400px; height:auto" [alt]="item.empresa">
+    <div class="ae-grid ">
+      <div class="ae-grid__item item-lg-3">
+        <img [src]="item.logo" style=" height:300px; width:auto" [alt]="item.empresa">
       </div>
-      <div class="item-lg-5 item-lg--offset-1">
+      <div class="item-lg-8 item-lg--offset-1">
         <h4 class="ae-u-bolder">{{ item.empresa }}</h4>
         <p>{{ item.cargo }}</p>
         <dl>
@@ -18,8 +18,9 @@
           <dt><b>Jefe directo</b></dt>
             <dd>-{{ item.jefe }}</dd>
         </dl>
+        <p class="au-lg-ta-justify au-lh-4"><b>Funciones: </b>{{ item.funciones }}</p>
       </div>
     </div>
-
+    <hr>
   </div>
 </div>
